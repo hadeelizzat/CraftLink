@@ -1,9 +1,82 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CraftLink" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.CraftLink" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--    </style>-->
+
+<!--    <style name="Theme.CraftLink" parent="Base.Theme.CraftLink" />-->
+    <style name="Theme.CraftLink" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/navy</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!--  لو أضفت خط Cairo: <item name="android:fontFamily">@font/cairo</item>  -->
+    </style>
+    <!--  استخدمه لـ SplashActivity بالـ Manifest  -->
+    <style name="Theme.CraftLink.Splash" parent="Theme.CraftLink">
+        <item name="android:windowBackground">@color/navy</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <style name="Theme.CraftLink" parent="Base.Theme.CraftLink" />
+    <!-- CL Style -->
+    <style name="CL" parent="Theme.CraftLink">
+    </style>
+
+    <style name="CL.Title">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="CL.Subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="CL.Label">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="CL.Link">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/link_text</item>
+    </style>
+    <style name="CL.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    <style name="CL.Input" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="hintTextColor">@color/navy</item>
+        <item name="startIconTint">@color/hint</item>
+        <item name="endIconTint">@color/hint</item>
+    </style>
+    <style name="CL.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="chipStrokeColor">@color/chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">24dp</item>
+        <item name="chipMinHeight">46dp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textSize">15sp</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
 </resources>

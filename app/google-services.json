@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615617266537",
+    "project_id": "craftlink-667c8",
+    "storage_bucket": "craftlink-667c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615617266537:android:c4aa291c103c17469b33f8",
+        "android_client_info": {
+          "package_name": "com.example.craftlink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiJYYfMvrUag4qfDB_O60f2ek5snawiUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
